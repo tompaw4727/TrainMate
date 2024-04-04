@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Welcome to "
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="TrainMate"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_dumbbell" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/calorie_tracking_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_light_grey"
+                android:backgroundTint="#13250e"
+                android:paddingHorizontal="70dp"
+                android:paddingVertical="7dp"
+                android:text="Calorie Tracking"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:drawableLeft="@drawable/ic_tracking"/>
+
+            <Button
+                android:id="@+id/weight_tracking_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_light_grey"
+                android:backgroundTint="#13250e"
+                android:paddingHorizontal="70dp"
+                android:paddingVertical="7dp"
+                android:text="Weight Tracking"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:drawableLeft="@drawable/ic_tracking"/>
+
+            <Button
+                android:id="@+id/alerts_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_light_grey"
+                android:backgroundTint="#13250e"
+                android:paddingHorizontal="70dp"
+                android:paddingVertical="7dp"
+                android:text="Alerts"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:drawableLeft="@drawable/ic_alert"/>
+
+            <Button
+                android:id="@+id/calorie_calculator__btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_light_grey"
+                android:backgroundTint="#13250e"
+                android:paddingHorizontal="70dp"
+                android:paddingVertical="7dp"
+                android:text="Calorie Calculator"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:drawableLeft="@drawable/ic_calculator"/>
+
+            <Button
+                android:id="@+id/profile_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_light_grey"
+                android:backgroundTint="#13250e"
+                android:paddingHorizontal="70dp"
+                android:paddingVertical="7dp"
+                android:text="Your Profile"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:drawableLeft="@drawable/ic_avatar"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
