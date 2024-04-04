@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
+    android:background="@drawable/background_gradient"
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="16dp"
@@ -24,23 +24,42 @@
             android:gravity="center"
             android:padding="3dp"
             android:text="TrainMate"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="50sp" />
 
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:src="@drawable/icon_account_circle" />
+            android:src="@drawable/ic_dumbbell" />
 
         <EditText
+<<<<<<< HEAD
+=======
+            android:id="@+id/username_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_light_grey"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+>>>>>>> 74c2abfb2f97cb2236b3caf30d1157fe45a07778
             android:id="@+id/email_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@drawable/rounded_corner_login"
+            android:background="@drawable/background_light_grey"
             android:hint="E-mail"
             android:inputType="textEmailAddress"
+<<<<<<< HEAD
             android:padding="18dp"
             android:textColor="#13250e"
             android:textColorHint="#13250e"
@@ -58,11 +77,20 @@
             android:textColor="#13250e"
             android:textColorHint="#13250e"
             android:textSize="20sp" />
+=======
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_mail"
+            android:drawablePadding="8dp"/>
+>>>>>>> 74c2abfb2f97cb2236b3caf30d1157fe45a07778
 
         <EditText
             android:id="@+id/phone_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_marginTop="32dp"
             android:background="@drawable/rounded_corner_login"
             android:hint="Phone number"
@@ -71,22 +99,74 @@
             android:textColor="#13250e"
             android:textColorHint="#13250e"
             android:textSize="20sp" />
+=======
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_light_grey"
+            android:hint="Phone number"
+            android:inputType="phone"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="8dp"/>
+>>>>>>> 74c2abfb2f97cb2236b3caf30d1157fe45a07778
 
         <View
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="0dp"
             android:layout_weight="1"/>
+=======
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_light_grey"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_padlock"
+            android:drawablePadding="8dp"/>
+
+        <EditText
+            android:id="@+id/confirm_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_light_grey"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_padlock"
+            android:drawablePadding="8dp"/>
+>>>>>>> 74c2abfb2f97cb2236b3caf30d1157fe45a07778
 
         <Button
             android:id="@+id/register_btn"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#13250e"
+<<<<<<< HEAD
             android:padding="18dp"
             android:text="Continue"
             android:textColor="@color/white"
             android:textSize="20sp" />
+=======
+            android:background="@drawable/background_light_grey"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="75dp"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+>>>>>>> 74c2abfb2f97cb2236b3caf30d1157fe45a07778
 
     </LinearLayout>
 

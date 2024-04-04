@@ -30,6 +30,7 @@
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:src="@drawable/icon_account_circle" />
+<<<<<<< HEAD
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,6 +40,10 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="45sp" />
+=======
+
+
+>>>>>>> 74c2abfb2f97cb2236b3caf30d1157fe45a07778
         <EditText
             android:layout_width="255dp"
             android:layout_height="wrap_content"
