@@ -30,43 +30,60 @@
             android:layout_width="160dp"
             android:layout_height="160dp"
             android:src="@drawable/icon_account_circle" />
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Enter user info"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="45sp" />
         <EditText
-            android:layout_width="251dp"
+            android:layout_width="255dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:padding="18dp"
             android:text="Name"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"/>
+            android:textColor="#13250e"
+            android:layout_marginTop="32dp"
+            android:textColorHint="#13250e"
+            android:background="@drawable/rounded_corner_login"
+            />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginTop="32dp">
 
             <EditText
                 android:id="@+id/sex"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="30dp"
                 android:ems="10"
                 android:inputType="number"
                 android:hint="Sex"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"/>
+                android:textColor="#13250e"
+                android:textColorHint="#13250e"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_login"/>
 
 
             <EditText
                 android:id="@+id/age"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="70dp"
+                android:layout_height="35dp"
                 android:ems="10"
                 android:inputType="number"
                 android:hint="Age"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"/>
+                android:textColor="#13250e"
+                android:textColorHint="#13250e"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_login"/>
 
         </LinearLayout>
 
@@ -74,29 +91,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:layout_marginTop="32dp">
 
             <EditText
                 android:id="@+id/height"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="20dp"
                 android:ems="10"
                 android:inputType="number"
                 android:hint="Height"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"/>
+                android:textColor="#13250e"
+                android:textColorHint="#13250e"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_login"/>
 
 
             <EditText
                 android:id="@+id/weight"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_width="115dp"
+                android:layout_height="35dp"
+                android:background="@drawable/rounded_corner_login"
                 android:ems="10"
-                android:inputType="number"
                 android:hint="Weight"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"/>
+                android:gravity="center"
+                android:inputType="number"
+                android:textColor="#13250e"
+                android:textColorHint="#13250e" />
 
         </LinearLayout>
 
