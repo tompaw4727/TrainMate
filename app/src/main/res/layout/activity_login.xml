@@ -34,12 +34,12 @@
             android:src="@drawable/ic_dumbbell" />
 
         <EditText
-            android:id="@+id/username_input"
+            android:id="@+id/email_input_l"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:background="@drawable/background_light_grey"
-            android:hint="Username"
+            android:hint="Email"
             android:inputType="text"
             android:padding="18dp"
             android:textColor="@color/black"
@@ -49,7 +49,7 @@
             android:drawablePadding="8dp"/>
 
         <EditText
-            android:id="@+id/password_input"
+            android:id="@+id/password_input_l"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -85,15 +85,27 @@
             />
 
         <TextView
-            android:id="@+id/register_btn"
+            android:id="@+id/register_txt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="Click to create new account"
+            android:text="Don't have account?"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/register_txt_clickable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Register"
+            android:onClick="onClick"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="17sp" />
 
 
     </LinearLayout>
