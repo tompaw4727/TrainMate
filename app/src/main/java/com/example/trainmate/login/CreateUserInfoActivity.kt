@@ -1,4 +1,4 @@
-package com.example.trainmate
+package com.example.trainmate.login
 
 
 import android.os.Bundle

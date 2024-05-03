@@ -78,4 +78,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.0")
+
 }

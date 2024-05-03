@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="16dp"
-    tools:context=".CreateUserInfoActivity">
+    tools:context=".login.CreateUserInfoActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"

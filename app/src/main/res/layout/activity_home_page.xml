@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="20dp"
-    tools:context=".HomePageActivity">
+    tools:context=".homepage.HomePageActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
