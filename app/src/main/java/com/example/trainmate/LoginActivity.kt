@@ -84,7 +84,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         val uid = user?.email.toString()
 
         //Przekazanie wartości uid
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, HomePageActivity::class.java)
         intent.putExtra("uID", uid)
         startActivity(intent)
     }

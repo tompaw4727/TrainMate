@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="20dp"
-    tools:context=".LoginActivity">
+    tools:context=".HomePageActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -92,7 +92,7 @@
                 android:drawableLeft="@drawable/ic_alert"/>
 
             <Button
-                android:id="@+id/calorie_calculator__btn"
+                android:id="@+id/calorie_calculator_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
