@@ -1,4 +1,4 @@
-package com.example.trainmate
+package com.example.trainmate.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,9 @@ import android.text.TextUtils
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import com.example.trainmate.BaseActivity
+import com.example.trainmate.R
+import com.example.trainmate.homepage.HomePageActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : BaseActivity(), View.OnClickListener {
@@ -84,7 +87,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         val uid = user?.email.toString()
 
         //Przekazanie wartości uid
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, HomePageActivity::class.java)
         intent.putExtra("uID", uid)
         startActivity(intent)
     }
