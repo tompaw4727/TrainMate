@@ -1,34 +1,18 @@
 package com.example.trainmate.api
 
-import com.fasterxml.jackson.databind.JsonNode
+import NutritionInfo
 import com.fasterxml.jackson.databind.ObjectMapper
 import java.io.FileInputStream
 import java.net.HttpURLConnection
-import java.net.URI
 import java.net.URL
 import java.util.Properties
-
-data class NutritionInfo(
-    val name: String,
-    val calories: Double,
-    val servingSize: Double,
-    val fatTotal: Double,
-    val fatSaturated: Double,
-    val protein: Double,
-    val sodium: Int,
-    val potassium: Int,
-    val cholesterol: Int,
-    val carbohydratesTotal: Double,
-    val fiber: Double,
-    val sugar: Double
-)
 
 class NutritionAPI {
     companion object {
         private const val API_ENDPOINT = "https://api.api-ninjas.com/v1/nutrition"
     }
 
-    fun getNutritionInfo(query: String): List<NutritionInfo>? {
+    fun getNutritionInfo(query: String): NutritionInfo? {
         val url = URL("$API_ENDPOINT?query=$query")
         val connection = url.openConnection() as HttpURLConnection
 
@@ -47,10 +31,36 @@ class NutritionAPI {
             val jsonResponse = connection.inputStream.bufferedReader().use { it.readText() }
             val nutritionInfoList = objectMapper.readValue(jsonResponse, Array<NutritionInfo>::class.java).toList()
             connection.disconnect()
-            nutritionInfoList
+            if (nutritionInfoList.isNotEmpty()) {
+                nutritionInfoList[0]
+            } else {
+                null
+            }
         } else {
             connection.disconnect()
             null
         }
+    }
+}
+
+
+
+fun main() {
+    val nutritionAPI = NutritionAPI()
+
+
+    val query = "apple"
+    val nutritionInfo = nutritionAPI.getNutritionInfo(query)
+
+
+    if (nutritionInfo != null) {
+        println("Nutrition Info for $query:")
+        println("Calories: ${nutritionInfo.calories}")
+        println("Protein: ${nutritionInfo.protein}")
+        println("Carbohydrates: ${nutritionInfo.carbohydratesTotal}")
+        println("Fat: ${nutritionInfo.fatTotal}")
+
+    } else {
+        println("Failed to retrieve nutrition info for $query.")
     }
 }
