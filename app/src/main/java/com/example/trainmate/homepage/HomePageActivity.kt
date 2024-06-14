@@ -35,7 +35,7 @@ class HomePageActivity : BaseActivity() {
             startActivity(intent)
         }
 
-        val profileButton = findViewById<Button>(R.id.calorie_calculator_btn)
+        val profileButton = findViewById<Button>(R.id.profile_btn)
         profileButton.setOnClickListener{
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)

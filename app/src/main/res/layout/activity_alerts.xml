@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Alerts"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_bell" />
+
+
+        <Button
+            android:id="@+id/calculate_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/background_light_grey"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="75dp"
+            android:text="Setup"
+            android:textColor="@color/black"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+</RelativeLayout>
