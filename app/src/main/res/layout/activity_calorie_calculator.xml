@@ -8,7 +8,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="16dp"
-    tools:context=".CalorieNeedsCalculatorActivity">
+    tools:context=".homepage.CalorieCalculatorActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"

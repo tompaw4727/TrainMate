@@ -21,7 +21,14 @@ android {
             useSupportLibrary = true
         }
     }
-
+    //dodane przy notifications
+    buildFeatures{
+        viewBinding = true
+    }
+    viewBinding{
+        enable = true
+    }
+    //
     buildTypes {
         release {
             isMinifyEnabled = false
