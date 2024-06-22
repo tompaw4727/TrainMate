@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
+    android:background="@color/background"
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="16dp"
@@ -23,15 +23,16 @@
             android:gravity="center"
             android:padding="3dp"
             android:text="Calorie Calculator"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/secondary_content"
+            android:textColorHint="@color/primary"
             android:textSize="40sp" />
 
         <ImageView
             android:layout_marginTop="10dp"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:src="@drawable/ic_calculator" />
+            android:src="@drawable/ic_calculator"
+            android:tint="@color/secondary_content"/>
 
         <EditText
             android:id="@+id/age_input"
@@ -42,8 +43,8 @@
             android:hint="Age"
             android:inputType="number"
             android:padding="18dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/foreground"
+            android:textColorHint="@color/foreground"
             android:textSize="18sp"
 
             android:drawablePadding="8dp" />
@@ -57,8 +58,8 @@
             android:hint="Height (cm)"
             android:inputType="number"
             android:padding="18dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/foreground"
+            android:textColorHint="@color/foreground"
             android:textSize="18sp"
 
             android:drawablePadding="8dp" />
@@ -72,8 +73,8 @@
             android:hint="Weight (kg)"
             android:inputType="number"
             android:padding="18dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/foreground"
+            android:textColorHint="@color/foreground"
             android:textSize="18sp"
 
             android:drawablePadding="8dp" />
@@ -91,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Male"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_content"
                 android:textSize="18sp" />
 
             <RadioButton
@@ -99,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Female"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_content"
                 android:textSize="18sp"
                 android:layout_marginStart="32dp" />
         </RadioGroup>
@@ -111,8 +112,8 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/background_light_grey"
             android:padding="18dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/foreground"
+            android:textColorHint="@color/foreground"
             android:textSize="18sp"
             android:spinnerMode="dropdown"
              />
@@ -126,7 +127,7 @@
             android:paddingVertical="10dp"
             android:paddingHorizontal="75dp"
             android:text="Calculate"
-            android:textColor="@color/black"
+            android:textColor="@color/secondary_content"
             android:textSize="23sp" />
 
     </LinearLayout>

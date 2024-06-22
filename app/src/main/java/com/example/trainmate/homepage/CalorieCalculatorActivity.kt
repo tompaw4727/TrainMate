@@ -12,12 +12,20 @@ import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.example.trainmate.R
+import com.example.trainmate.controller.UserProfileController
+import com.example.trainmate.entity.UserData
+import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
 
 class CalorieCalculatorActivity : AppCompatActivity(){
+    private val controller = UserProfileController()
+    private var uidEmail: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        uidEmail = intent.getStringExtra("uID_email")
         setContentView(R.layout.activity_calorie_calculator)
         //spinner
         val activities = resources.getStringArray(R.array.Activities)
@@ -31,7 +39,13 @@ class CalorieCalculatorActivity : AppCompatActivity(){
 
         val activityFactors = arrayOf(1.2, 1.375, 1.55, 1.725, 1.9)
 
+        lifecycleScope.launch {
+            val userProfile = controller.getUserData(uidEmail!!)
 
+            ageInput.setText(userProfile?.age.toString())
+            heightInput.setText(userProfile?.height.toString())
+            weightInput.setText(userProfile?.weight.toString())
+        }
 
 
 
@@ -68,6 +82,10 @@ class CalorieCalculatorActivity : AppCompatActivity(){
             val dailyCalories = (bmr * activityFactor).roundToInt()
             val dailyCaloriesLoss = (dailyCalories * 0.9).roundToInt()
             val dailyCaloriesGain = (dailyCalories * 1.1).roundToInt()
+
+            lifecycleScope.launch {
+                controller.updateUserData(uidEmail!!, UserData(calories = dailyCalories))
+            }
 
             val message = """
                 Daily Caloric Needs: ${dailyCalories} kcal

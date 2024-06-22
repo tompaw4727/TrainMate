@@ -19,7 +19,7 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
     private var loginButton: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.login_activity)
 
         inputEmail = findViewById(R.id.email_input_l)
         inputPassword = findViewById(R.id.password_input_l)
@@ -81,14 +81,13 @@ class LoginActivity : BaseActivity(), View.OnClickListener {
         }
     }
 
-    // Przejście do aktywności głównej
     open fun goToMainActivity() {
         val user = FirebaseAuth.getInstance().currentUser
-        val uid = user?.email.toString()
+        val uid_email = user?.email.toString()
 
         //Przekazanie wartości uid
         val intent = Intent(this, HomePageActivity::class.java)
-        intent.putExtra("uID", uid)
+        intent.putExtra("uID_email", uid_email)
         startActivity(intent)
     }
 }

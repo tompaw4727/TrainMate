@@ -9,8 +9,30 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="colorSnackBarSuccess">#03A9F4</color>
-    <color name="colorSnackBarError">#EB1B63</color>
+    <color name="primary">#7c3aed</color>
+    <color name="primary_content">#ffffff</color>
+    <color name="primary_dark">#5f14e0</color>
+    <color name="primary_light">#9b69f1</color>
+
+    <color name="secondary">#ed3a51</color>
+    <color name="secondary_content">#ffffff</color>
+    <color name="secondary_dark">#e0142f</color>
+    <color name="secondary_light">#f1697a</color>
+
+    <color name="background">#171221</color>
+    <color name="foreground">#231b32</color>
+    <color name="border">#3b2d53</color>
+
+    <color name="copy">#fbfafc</color>
+    <color name="copy_light">#d6cde4</color>
+    <color name="copy_lighter">#9f8bc1</color>
+
+    <color name="success">#3aed3a</color>
+    <color name="warning">#eded3a</color>
+    <color name="error">#ed3a3a</color>
+    <color name="success_content">#032503</color>
+    <color name="warning_content">#252503</color>
+    <color name="error_content">#ffffff</color>
 
 
 </resources>

@@ -16,9 +16,13 @@
         android:theme="@style/Theme.TrainMate"
         tools:targetApi="31">
         <activity
-            android:name=".homepage.CalorieTrackActivity"
+            android:name=".homepage.calorie.track.CalorieTrackActivity"
             android:exported="false"
             android:label="@string/title_activity_nutrition"
+            android:theme="@style/Theme.TrainMate" />
+        <activity
+            android:name=".homepage.ProfileActivity"
+            android:exported="false"
             android:theme="@style/Theme.TrainMate" />
         <activity
             android:name=".login.LoginActivity"

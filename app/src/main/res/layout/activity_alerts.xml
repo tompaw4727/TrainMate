@@ -22,8 +22,8 @@
             android:gravity="center"
             android:padding="3dp"
             android:text="Alerts"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/primary"
+            android:textColorHint="@color/primary"
             android:textSize="40sp" />
 
         <ImageView
@@ -65,7 +65,7 @@
             android:paddingVertical="10dp"
             android:paddingHorizontal="75dp"
             android:text="Setup"
-            android:textColor="@color/black"
+            android:textColor="@color/primary"
             android:textSize="23sp" />
     </LinearLayout>
 </RelativeLayout>

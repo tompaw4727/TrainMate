@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_gradient"
+    android:background="@color/background"
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:padding="20dp"
@@ -24,8 +24,8 @@
             android:gravity="center"
             android:padding="3dp"
             android:text="Welcome to "
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/secondary_content"
+            android:textColorHint="@color/secondary_content"
             android:textSize="25sp" />
 
 
@@ -35,14 +35,15 @@
             android:gravity="center"
             android:padding="3dp"
             android:text="TrainMate"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textColor="@color/secondary_content"
+            android:textColorHint="@color/secondary_content"
             android:textSize="45sp" />
 
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:src="@drawable/ic_dumbbell" />
+            android:src="@drawable/ic_dumbbell"
+            app:tint="@color/secondary_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,27 +55,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/background_light_grey"
-                android:backgroundTint="#13250e"
+                android:background="@drawable/button_rounded_corners_light"
+                android:drawableLeft="@drawable/ic_tracking"
+                android:drawableTint="@color/primary_content"
                 android:paddingHorizontal="70dp"
                 android:paddingVertical="7dp"
                 android:text="Calorie Tracking"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_content"
+
+                android:textSize="23sp" />
+
+            <Button
+                android:id="@+id/calorie_calculator_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_rounded_corners"
+                android:paddingHorizontal="70dp"
+                android:paddingVertical="7dp"
+                android:text="Calorie Calculator"
+                android:textColor="@color/secondary_content"
                 android:textSize="23sp"
-                android:drawableLeft="@drawable/ic_tracking"/>
+                android:drawableTint="@color/secondary_content"
+
+                android:drawableLeft="@drawable/ic_calculator"/>
 
             <Button
                 android:id="@+id/weight_tracking_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/background_light_grey"
-                android:backgroundTint="#13250e"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_rounded_corners"
                 android:paddingHorizontal="70dp"
                 android:paddingVertical="7dp"
                 android:text="Weight Tracking"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_content"
                 android:textSize="23sp"
+                android:drawableTint="@color/secondary_content"
+
                 android:drawableLeft="@drawable/ic_tracking"/>
 
             <Button
@@ -82,42 +100,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/background_light_grey"
-                android:backgroundTint="#13250e"
+                android:background="@drawable/button_rounded_corners"
                 android:paddingHorizontal="70dp"
                 android:paddingVertical="7dp"
                 android:text="Alerts"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_content"
                 android:textSize="23sp"
+                android:drawableTint="@color/secondary_content"
                 android:drawableLeft="@drawable/ic_alert"/>
 
-            <Button
-                android:id="@+id/calorie_calculator_btn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/background_light_grey"
-                android:backgroundTint="#13250e"
-                android:paddingHorizontal="70dp"
-                android:paddingVertical="7dp"
-                android:text="Calorie Calculator"
-                android:textColor="@color/black"
-                android:textSize="23sp"
-                android:drawableLeft="@drawable/ic_calculator"/>
+
 
             <Button
                 android:id="@+id/profile_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@drawable/background_light_grey"
-                android:backgroundTint="#13250e"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_rounded_corners_light"
                 android:paddingHorizontal="70dp"
                 android:paddingVertical="7dp"
                 android:text="Your Profile"
-                android:textColor="@color/black"
+                android:textColor="@color/secondary_content"
                 android:textSize="23sp"
-                android:drawableLeft="@drawable/ic_avatar"/>
+                android:drawableLeft="@drawable/ic_avatar"
+                android:drawableTint="@color/secondary_content"
+                />
         </LinearLayout>
     </LinearLayout>
 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/meal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meal Name"
+        android:textSize="16sp"
+        android:textColor="@color/secondary_dark"
+
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/meal_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_content"
+
+        android:text="Weight"/>
+
+    <TextView
+        android:id="@+id/meal_fat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_content"
+
+        android:text="Fat"/>
+
+    <TextView
+        android:id="@+id/meal_protein"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_content"
+
+        android:text="Protein"/>
+
+    <TextView
+        android:id="@+id/meal_calories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_content"
+
+        android:text="Calories"/>
+
+    <TextView
+        android:id="@+id/meal_carbohydrates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/secondary_content"
+
+        android:text="Carbohydrates"/>
+
+
+</LinearLayout>
