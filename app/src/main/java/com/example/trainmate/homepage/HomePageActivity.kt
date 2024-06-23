@@ -6,6 +6,7 @@ import android.widget.Button
 import com.example.trainmate.BaseActivity
 import com.example.trainmate.R
 import com.example.trainmate.homepage.calorie.track.CalorieTrackActivity
+import com.example.trainmate.notification.NotificationActivity
 
 class HomePageActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +31,7 @@ class HomePageActivity : BaseActivity() {
 
         val alertsButton = findViewById<Button>(R.id.alerts_btn)
         alertsButton.setOnClickListener {
-            val intent = Intent(this, AlertsActivity::class.java)
+            val intent = Intent(this, NotificationActivity::class.java)
             intent.putExtra("uID_email", uid_email)
             startActivity(intent)
         }

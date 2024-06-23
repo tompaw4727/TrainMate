@@ -70,12 +70,12 @@
                 android:value="" />
         </activity>
 
-        <receiver android:name=".notificationTutorial.Notification"
+        <receiver android:name=".notification.Notification"
             android:enabled="true"
             android:exported="true"/>
 
         <activity
-            android:name=".notificationTutorial.NotificationTutorialActivity"
+            android:name=".notification.NotificationActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

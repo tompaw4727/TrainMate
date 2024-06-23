@@ -1,4 +1,4 @@
-package com.example.trainmate.notificationTutorial
+package com.example.trainmate.notification
 
 import android.app.NotificationManager
 import android.content.BroadcastReceiver
@@ -8,15 +8,15 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import com.example.trainmate.R
 
-const val notificationID = 1
 const val channelID = "channel1"
 const val titleExtra = "titleExtra"
 const val messageExtra = "messageExtra"
+const val notificationIdExtra = "notificationId"
 
 class Notification : BroadcastReceiver() {
-    override fun onReceive(context: Context, intent: Intent)
-    {
+    override fun onReceive(context: Context, intent: Intent) {
         Log.d("Notification", "onReceive called")
+        val notificationId = intent.getIntExtra(notificationIdExtra, 0) // Retrieve the unique notification ID
         val notification = NotificationCompat.Builder(context, channelID)
             .setSmallIcon(R.drawable.ic_bell)
             .setContentTitle(intent.getStringExtra(titleExtra))
@@ -24,8 +24,8 @@ class Notification : BroadcastReceiver() {
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .build()
 
-        val  manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        manager.notify(notificationID, notification)
-        Log.d("Notification", "Notification sent")
+        val manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        manager.notify(notificationId, notification) // Use the unique notification ID
+        Log.d("Notification", "Notification sent with ID $notificationId")
     }
 }

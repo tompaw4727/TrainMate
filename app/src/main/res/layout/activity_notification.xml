@@ -1,0 +1,97 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".notification.NotificationActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Alerts"
+            android:textColor="@color/secondary_content"
+            android:textColorHint="@color/primary"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/ic_bell"
+            android:tint="@color/secondary_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.9"
+                android:scaleY="0.7"
+                android:timePickerMode="spinner"
+                android:textColor="@color/secondary_content"
+                />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/training_alert_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Training Alert"
+            android:checked="true"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/secondary_content"
+            android:textSize="18sp"/>
+
+        <Switch
+            android:id="@+id/creatine_alert_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creatine Alert"
+            android:checked="true"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/secondary_content"
+            android:textSize="18sp"/>
+
+        <Switch
+            android:id="@+id/water_alert_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Alert"
+            android:checked="true"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/secondary_content"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/background_light_grey"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="70dp"
+            android:text="Schedule"
+            android:textColor="@color/secondary_content"
+            android:textSize="23sp" />
+    </LinearLayout>
+</RelativeLayout>

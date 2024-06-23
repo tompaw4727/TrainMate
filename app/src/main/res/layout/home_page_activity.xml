@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="3dp"
+            android:layout_marginTop="10dp"
             android:text="TrainMate"
             android:textColor="@color/secondary_content"
             android:textColorHint="@color/secondary_content"
@@ -58,12 +58,12 @@
                 android:background="@drawable/button_rounded_corners_light"
                 android:drawableLeft="@drawable/ic_tracking"
                 android:drawableTint="@color/primary_content"
-                android:paddingHorizontal="70dp"
-                android:paddingVertical="7dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="5dp"
                 android:text="Calorie Tracking"
                 android:textColor="@color/secondary_content"
 
-                android:textSize="23sp" />
+                android:textSize="15sp" />
 
             <Button
                 android:id="@+id/calorie_calculator_btn"
@@ -71,11 +71,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/button_rounded_corners"
-                android:paddingHorizontal="70dp"
-                android:paddingVertical="7dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="5dp"
                 android:text="Calorie Calculator"
                 android:textColor="@color/secondary_content"
-                android:textSize="23sp"
+                android:textSize="15sp"
                 android:drawableTint="@color/secondary_content"
 
                 android:drawableLeft="@drawable/ic_calculator"/>
@@ -86,11 +86,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/button_rounded_corners"
-                android:paddingHorizontal="70dp"
-                android:paddingVertical="7dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="5dp"
                 android:text="Weight Tracking"
                 android:textColor="@color/secondary_content"
-                android:textSize="23sp"
+                android:textSize="15sp"
                 android:drawableTint="@color/secondary_content"
 
                 android:drawableLeft="@drawable/ic_tracking"/>
@@ -101,11 +101,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/button_rounded_corners"
-                android:paddingHorizontal="70dp"
-                android:paddingVertical="7dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="5dp"
                 android:text="Alerts"
                 android:textColor="@color/secondary_content"
-                android:textSize="23sp"
+                android:textSize="15sp"
                 android:drawableTint="@color/secondary_content"
                 android:drawableLeft="@drawable/ic_alert"/>
 
@@ -117,11 +117,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/button_rounded_corners_light"
-                android:paddingHorizontal="70dp"
-                android:paddingVertical="7dp"
+                android:paddingHorizontal="50dp"
+                android:paddingVertical="5dp"
                 android:text="Your Profile"
                 android:textColor="@color/secondary_content"
-                android:textSize="23sp"
+                android:textSize="15sp"
                 android:drawableLeft="@drawable/ic_avatar"
                 android:drawableTint="@color/secondary_content"
                 />
